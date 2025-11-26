@@ -43,27 +43,27 @@ sentimento = analyze_sentiment()
 print("Sentimento:", sentimento)
 
 
-EXPLICAÇÃO DO CÓDIGO:
-Este código tem como objetivo analisar o sentimento de um comentário inserido pelo usuário. Vamos explicar suas funcionalidades:
+EXPLICAÇÃO DO CÓDIGO: # type: ignore
+#Este código tem como objetivo analisar o sentimento de um comentário inserido pelo usuário. Vamos explicar suas funcionalidades: # type: ignore
 
-1. **Importação do módulo re**: O código começa importando o módulo `re`, que é a biblioteca de expressões regulares do Python. Isso permite a utilização de expressões regulares para manipulação de strings.
+#1. **#Importação do módulo re**: O #código começa importando o módulo `re`, que é a biblioteca de expressões regulares do Python. Isso permite a utilização de expressões regulares para manipulação de strings.
 
-2. **Função `analyze_sentiment()`**: Esta função recebe um comentário inserido pelo usuário como entrada. Ela realiza as seguintes etapas:
+#2. **#Função `analyze_sentiment()`**: #Esta função recebe um comentário inserido pelo usuário como entrada. Ela realiza as seguintes etapas:
 
-   - Divide o comentário em palavras utilizando expressões regulares (`re.findall(r'\b\w+\b', comentario.lower())`). Este passo converte todas as palavras do comentário para minúsculas e as divide em uma lista.
+   #Divide o comentário em palavras utilizando expressões regulares (`re.findall(r'\b\w+\b', comentario.lower())`). Este passo converte todas as palavras do comentário para minúsculas e as divide em uma lista.
    
-   - Define listas de palavras positivas, negativas e neutras para classificação.
+   #Define listas de palavras positivas, negativas e neutras para classificação.
    
-   - Conta o número de palavras positivas e negativas no comentário usando compreensões de lista (`sum(palavra in positivas for palavra in palavras)` e `sum(palavra in negativas for palavra in palavras)`).
+   #Conta o número de palavras positivas e negativas no comentário usando compreensões de lista (`sum(palavra in positivas for palavra in palavras)` e `sum(palavra in negativas for palavra in palavras)`).
    
-   - Verifica se há mais palavras positivas do que negativas e se não há palavras neutras. Se essa condição for verdadeira, o comentário é considerado positivo.
+    #Verifica se há mais palavras positivas do que negativas e se não há palavras neutras. Se essa condição for verdadeira, o comentário é considerado positivo.
    
-   - Verifica se há mais palavras negativas do que positivas e se não há palavras neutras. Se essa condição for verdadeira, o comentário é considerado negativo.
+    #Verifica se há mais palavras negativas do que positivas e se não há palavras neutras. Se essa condição for verdadeira, o comentário é considerado negativo.
    
-   - Verifica se há mais palavras neutras do que positivas e negativas. Se essa condição for verdadeira, o comentário é considerado neutro.
+   #Verifica se há mais palavras neutras do que positivas e negativas. Se essa condição for verdadeira, o comentário é considerado neutro.
    
-   - Retorna o sentimento do comentário (positivo, negativo ou neutro) com base nas verificações anteriores.
+    #Retorna o sentimento do comentário (positivo, negativo ou neutro) com base nas verificações anteriores.
 
-3. **Saída esperada**: O resultado da função `analyze_sentiment()` é atribuído à variável `sentimento`, que é então impressa na tela junto com a mensagem "Sentimento:". 
+#3. **Saída esperada**: O resultado da função `analyze_sentiment()` é atribuído à variável `sentimento`, que é então impressa na tela junto com a mensagem "Sentimento:". 
 
-O objetivo deste código é automatizar a análise de sentimentos em comentários de texto, classificando-os como positivos, negativos ou neutros com base nas palavras utilizadas no comentário. Isso pode ser útil em diversas aplicações, como análise de feedbacks de clientes em redes sociais, avaliações de produtos, entre outros.
+#O objetivo deste código é automatizar a análise de sentimentos em comentários de texto, classificando-os como positivos, negativos ou neutros com base nas palavras utilizadas no comentário. Isso pode ser útil em diversas aplicações, como análise de feedbacks de clientes em redes sociais, avaliações de produtos, entre outros.

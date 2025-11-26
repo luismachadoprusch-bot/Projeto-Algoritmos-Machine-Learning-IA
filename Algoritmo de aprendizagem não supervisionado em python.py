@@ -69,4 +69,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()tra como usar o K-Means para encontrar padrões nos dados, mesmo sem rótulos prévios, e visualizar esses padrões por meio da clusterização.
+    main()#tri como usar o K-Means para encontrar padrões nos dados, mesmo sem rótulos prévios, e visualizar esses padrões por meio da clusterização.
